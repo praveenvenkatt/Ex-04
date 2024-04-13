@@ -4,25 +4,29 @@
 Develop a program to implement Secure Hash Algorithm (SHA-1)
 
 ## SECURED HASH ALGORITHM-1 (SHA-1):
-```
+
 Step 1:Append Padding Bits….
 Message is “padded” with a 1 and as many 0’s as necessary to bring the
 message length to 64 bits fewer than an even multiple of 512.
+
 Step 2: Append Length....
 64 bits are appended to the end of the padded message. These bits hold the
 binary format of 64 bits indicating the length of the original message.
+
 Step 3: Prepare Processing Functions….
 SHA1 requires 80 processing functions defined as:
 f(t;B,C,D) = (B AND C) OR ((NOT B) AND D) ( 0 <= t <= 19)
 f(t;B,C,D) = B XOR C XOR D (20 <= t <= 39)
 f(t;B,C,D) = (B AND C) OR (B AND D) OR (C AND D) (40 <= t<=59)
 f(t;B,C,D) = B XOR C XOR D (60 <= t <= 79)
+
 Step 4: Prepare Processing Constants....
 SHA1 requires 80 processing constant words defined as:
 K(t) = 0x5A827999 ( 0 <= t <= 19)
 K(t) = 0x6ED9EBA1 (20 <= t <= 39)
 K(t) = 0x8F1BBCDC (40 <= t <= 59)
 K(t) = 0xCA62C1D6 (60 <= t <= 79)
+
 Step 5: Initialize Buffers….
 SHA1 requires 160 bits or 5 buffers of words (32 bits):
 H0 = 0x67452301
@@ -30,6 +34,7 @@ H1 = 0xEFCDAB89
 H2 = 0x98BADCFE
 H3 = 0x10325476
 H4 = 0xC3D2E1F0
+
 Step 6: Processing Message in 512-bit blocks (L blocks in total message)….
 This is the main task of SHA1 algorithm which loops through the padded
 and appended message in 512-bit blocks.
@@ -37,6 +42,7 @@ Input and predefined functions: M[1, 2, ..., L]: Blocks of the padded and append
 message f(0;B,C,D), f(1,B,C,D), ..., f(79,B,C,D): 80 Processing Functions K(0), K(1),
 ..., K(79): 80 Processing Constant Words
 H0, H1, H2, H3, H4, H5: 5 Word buffers with initial values
+
 Step 6: Pseudo Code….
 For loop on k = 1 to L
 (W(0),W(1),...,W(15)) = M[k] /* Divide M[k] into 16 words */
@@ -51,7 +57,7 @@ C = B<<<30, B = A, A = TEMP
  End of for loop
 Output:
 H0, H1, H2, H3, H4, H5: Word buffers with final message digest
-```
+
 ## PROGRAM
 ```
 import java.security.*;
