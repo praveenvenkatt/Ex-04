@@ -99,27 +99,14 @@ return buf.toString(); }
 }
 ```
 ## OUTPUT:
-```
-C:\Program Files\Java\jdk1.6.0_20\bin>javac SHA1.java
-C:\Program Files\Java\jdk1.6.0_20\bin>java SHA1
-Message digest object info:
-Algorithm = SHA1
-Provider = SUN version 1.6
-ToString = SHA1 Message Digest from SUN, <initialized>
-SHA1("") = DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
-SHA1("abc") = A9993E364706816ABA3E25717850C26C9CD0D89D
-SHA1("abcdefghijklmnopqrstuvwxyz") =
-32D10C7B8CF96570CA04CE37F2A19D84240D3A89
-```
+![image](https://github.com/praveenvenkatt/Ex-04/assets/119560117/cc8c7fad-2e14-45a7-bde4-1adfc2c471ee)
+
+
 ## RESULT:
 Thus SHA was implemented successfully.
 
 
-
-
-
-
-  ## DIGITAL SIGNATURE STANDARD
+## DIGITAL SIGNATURE STANDARD
 
 ## AIM:
 To write a C program to implement the signature scheme named digital
