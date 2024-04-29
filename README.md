@@ -43,7 +43,7 @@ message f(0;B,C,D), f(1,B,C,D), ..., f(79,B,C,D): 80 Processing Functions K(0), 
 ..., K(79): 80 Processing Constant Words
 H0, H1, H2, H3, H4, H5: 5 Word buffers with initial values
 
-Step 6: Pseudo Code….
+Step 7: Pseudo Code….
 For loop on k = 1 to L
 (W(0),W(1),...,W(15)) = M[k] /* Divide M[k] into 16 words */
 For t = 16 to 79 do:
@@ -114,13 +114,16 @@ signature standard (Euclidean Algorithm).
 ## ALGORITHM:
 
 STEP-1: Alice and Bob are investigating a forgery case of x and y.
+
 STEP-2: X had document signed by him but he says he did not sign that document digitally.
+
 STEP-3: Alice reads the two prime numbers p and a.
+
 STEP-4: He chooses a random co-primes alpha and beta and the x’s original signature x.
-STEP-5: With these values, he applies it to the elliptic curve cryptographic equation to obtain
-y
-STEP-6: Comparing this ‘y’ with actual y’s document, Alice concludes that y is a
-forgery.
+
+STEP-5: With these values, he applies it to the elliptic curve cryptographic equation to obtain y
+
+STEP-6: Comparing this ‘y’ with actual y’s document, Alice concludes that y is a forgery.
 
 ## PROGRAM: (Digital Signature Standard)
 ```
